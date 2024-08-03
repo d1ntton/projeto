@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Quiz Premiado</title>
+</head>
+<body>
+  <div class="container">
+    <div class="login-container">
+      <h1 class="title">Quiz Premiado</h1>
+      <form id="login-form">
+        <div class="input-group">
+          <input type="text" id="username" name="username" placeholder="Digite seu nome">
+        </div>
+        <div class="input-group">
+          <input type="password" id="password" name="password" placeholder="Digite sua senha">
+        </div>
+        <button type="submit" class="login button">Login</button>
+      </form>
+    </div>
+    <div class="rules-container hide">
+      <h2>Regras do Quiz</h2>
+      <p>O quiz é premiado para os 3 primeiros lugares:</p>
+      <ul>
+        <li>1º lugar: R$ 50,00</li>
+        <li>2º lugar: R$ 20,00</li>
+        <li>3º lugar: R$ 10,00</li>
+      </ul>
+      <button class="start-quiz button">Começar Quiz!</button>
+    </div>
+    <div class="questions-container hide">
+      <span class="question">Pergunta aqui?</span>
+      <div class="answers-container"></div>
+    </div>
+    <div class="controls-container">
+      <button class="next-question button hide">Próximo</button>
+    </div>
+    <div class="timer hide">Tempo restante: <span id="timer">15</span> segundos</div>
+  </div>
+  <script src="questions.js" async></script>
+  <script src="index.js" async></script>
+</body>
+</html>
